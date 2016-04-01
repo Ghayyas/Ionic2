@@ -1,0 +1,56 @@
+<ion-navbar *navbar favorite>
+  <ion-title primary>
+    Please Signup
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+    
+    <ion-card>
+
+  <ion-card-header class="green">
+          Signup Page
+  </ion-card-header>
+
+  <ion-card-content>
+    <!-- Add card content here! -->
+<ion-list>
+
+  <ion-item class="green">
+    <ion-label floating>Your Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+    <ion-item class="green">
+    <ion-label floating>User Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+      <ion-item class="green">
+    <ion-label floating>User Email</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label floating>Confirm Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+    <br/>
+
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select [(ngModel)]="gender">
+        <ion-option value="f">Female</ion-option>
+        <ion-option value="m">Male</ion-option>
+      </ion-select>
+    </ion-item>
+
+
+<div padding>
+  <button block>Sign up</button>
+</div>
+</ion-list>
+  </ion-card-content>
+    </ion-card>
