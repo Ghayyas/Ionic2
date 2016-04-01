@@ -33,7 +33,7 @@
 <ion-row >
   <ion-col> 
       <ion-item class="forgetPass">
- <a href="#" danger item-center>Forget Your Password ?</a>
+ <a (click)="forgot()" danger item-center>Forget Your Password ?</a>
     </ion-item></ion-col>
 </ion-row>
 
@@ -44,7 +44,7 @@
     <ion-card>
         <ion-card-content>
             <div padding>
-  <button block danger>Create New Account </button>
+  <button block danger (click)="signup()">Create New Account </button>
 </div> 
             </ion-card-content></ion-card>
 
