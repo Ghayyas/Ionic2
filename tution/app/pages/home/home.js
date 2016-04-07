@@ -1,7 +1,8 @@
 import {Page, NavController,Platform} from 'ionic-angular';
 import {signup} from "../signup/signup";
 import {forgot} from "../forgot/forgot";
-
+import {tutorSearch} from "../tutorSearch/tutor-search";
+import {tutorlist} from '../tutorlist/tutorlist';
 @Page({
   templateUrl: 'build/pages/home/home.html'
 })
@@ -19,5 +20,8 @@ export class HomePage {
   }
   forgot(){
       this.nav.push(forgot);
+  }
+  signin(){
+      this.nav.push(tutorlist)
   }
 }

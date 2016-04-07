@@ -1,9 +1,8 @@
 import 'es6-shim';
-import {App, Platform,IonicApp} from 'ionic-angular';
+import {App, IonicApp, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
-import {HomePage} from './pages/home/home';
+import {GettingStartedPage} from './pages/getting-started/getting-started';
 import {ListPage} from './pages/list/list';
-import {signup} from "./pages/signup/signup";
 
 
 @App({
@@ -11,23 +10,18 @@ import {signup} from "./pages/signup/signup";
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
-  static get parameters() {
-    return [[IonicApp], [Platform]];
-  }
+  rootPage: any = GettingStartedPage;
+  pages: Array<{title: string, component: any}>
 
-  constructor(app, platform) {
-    this.app = app;
-    this.platform = platform;
-
+  constructor(private app: IonicApp, private platform: Platform) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Getting Started', component: HomePage },
+      { title: 'Getting Started', component: GettingStartedPage },
       { title: 'List', component: ListPage }
     ];
 
-    this.rootPage = HomePage;
   }
 
   initializeApp() {

@@ -1,0 +1,95 @@
+<ion-navbar *navbar favorite>
+  <ion-title primary>
+  Tutor Search
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+    
+    <ion-card>
+        <ion-card-header class="green">
+            Search Your Ideal tutor
+            </ion-card-header>
+        <ion-card-content>
+     <ion-list>
+      <ion-item>
+      <ion-label>Subject</ion-label>
+     <ion-select [(ngModel)]="subject">
+    <ion-option value="nes">All Subject</ion-option>
+    <ion-option value="n64">Chemistry</ion-option>
+    <ion-option value="ps">Physics</ion-option>
+    <ion-option value="genesis">English</ion-option>
+    <ion-option value="saturn">Maths</ion-option>
+    <ion-option value="snes">Computer Science</ion-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+      <ion-label>Level</ion-label>
+     <ion-select [(ngModel)]="level">
+    <ion-option value="all-level">All Level</ion-option>
+    <ion-option value="A">A Level</ion-option>
+    <ion-option value="O">O Level</ion-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+      <ion-label>Gender</ion-label>
+     <ion-select [(ngModel)]="gender">
+    <ion-option value="Any-gender">Any Gender</ion-option>
+    <ion-option value="male">Male</ion-option>
+    <ion-option value="female">Female</ion-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+      <ion-label>Day</ion-label>
+     <ion-select [(ngModel)]="day">
+    <ion-option value="anyDay">Any Day</ion-option>
+    <ion-option value="mon">Monday</ion-option>
+    <ion-option value="tues">Tuesday</ion-option>
+    <ion-option value="wed">Wednesday</ion-option>
+    <ion-option value="thurs">Thursday</ion-option>
+    <ion-option value="fri">Friday</ion-option>
+        <ion-option value="sat">Satarday</ion-option>
+            <ion-option value="sun">Sunday</ion-option>
+  </ion-select>
+</ion-item>
+</ion-list>
+            </ion-card-content>
+        </ion-card>
+    <ion-card>
+        <ion-card-content>
+            <div padding>
+  <button block>Search</button>
+</div>
+</ion-card-content>
+        </ion-card>
+
+    <ion-card>
+        <ion-card-content>
+            <div padding>
+  <button block favorite>Reset</button>
+</div>
+</ion-card-content>
+        </ion-card>
+        
+         <ion-card >
+        <ion-card-content>
+     <ion-list no-lines>
+        
+             
+  <ion-item class="green">
+  <ion-icon name="md-checkmark"></ion-icon>
+  Completely free
+  </ion-item>
+    <ion-item class="green">
+     <ion-icon name="md-checkmark"></ion-icon> No agency fees or commissions
+  </ion-item>
+    <ion-item class="green"> 
+    <ion-icon name="md-checkmark"></ion-icon> Tutor profiles are real accounts
+  </ion-item>
+    <ion-item class="green">
+    <ion-icon name="md-checkmark"></ion-icon>   No more waiting times
+  </ion-item>
+</ion-list>
+            </ion-card-content></ion-card>
+        
+    </ion-content>
